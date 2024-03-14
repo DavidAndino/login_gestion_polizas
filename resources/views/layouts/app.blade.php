@@ -23,19 +23,26 @@
           <p class="text-xl">Bienvenido, <b>{{ auth()->user()->name }}</b></p>
         </li>
         <li>
-          <a href="{{ route('login.destroy') }}" class="font-bold
+         <!--
+            <a href="{{ route('login.destroy') }}" class="font-bold
           py-3 px-4 rounded-md bg-red-500 hover:bg-red-600">Log Out</a>
         </li>
+         --> 
       @else
-        <li class="mx-6">
+        <li class="mx-1">
           <a href="{{ route('login.index') }}" class="font-semibold 
           hover:bg-indigo-700 py-3 px-4 rounded-md">Log In</a>
         </li>
-        <li>
+        <!--
+
+          <li>
           <a href="{{ route('register.index') }}" class="font-semibold
           border-2 border-white py-2 px-4 rounded-md hover:bg-white 
           hover:text-indigo-700">Register</a>
         </li>
+
+        -->
+        
       @endif
       </ul>
 
